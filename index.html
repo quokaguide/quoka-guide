@@ -26,7 +26,7 @@
         <span class="brand-name">Quoka Guide</span>
       </a>
   
-      <nav class="nav" aria-label="Primary">
+      <nav class="nav" id="mobileNav" aria-label="Primary">
         <a href="index.html#top">Home</a>
         <a href="plans.html">Plans</a>
         <a href="contact.html">Contact</a>
@@ -35,7 +35,10 @@
       <div class="header-cta">
         <a href="contact.html" class="button primary small">Start Project</a>
       </div>
-  
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">
+        ☰
+        <span class="sr-only">Menu</span>
+      </button>
     </div>
   </header>
   
@@ -324,6 +327,17 @@
   });
 </script>
 
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('mobileNav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>
 
 </body>
 </html>
