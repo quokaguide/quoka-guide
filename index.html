@@ -18,32 +18,33 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header">
+  <header class="site-header enhanced-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html#top" aria-label="Quoka Guide home">
-        <img src="assets/quoka-icon.png" alt="Quoka Guide logo" class="brand-mark" />
+  
+      <a class="brand" href="index.html">
+        <img src="assets/quoka-icon.png" alt="Quoka Guide" class="brand-mark">
         <span class="brand-name">Quoka Guide</span>
       </a>
-
+  
       <nav class="nav" aria-label="Primary">
         <a href="index.html#top">Home</a>
         <a href="plans.html">Plans</a>
         <a href="contact.html">Contact</a>
-
       </nav>
-
-      <div class="auth">
-        <a href="#" class="link">Log In</a>
-        <a href="#" class="button small">Sign Up</a>
+  
+      <div class="header-cta">
+        <a href="contact.html" class="button primary small">Start Project</a>
       </div>
+  
     </div>
   </header>
+  
 
   <!-- Hero 1: text left, image right -->
   <section class="hero" id="top">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>Let us build your website for you at an affordable price.</h1>
+        <h1>Professional websites for small businesses — built fast and priced right.</h1>
         <a class="button primary" href="plans.html">More Information</a>
       </div>
 
@@ -61,7 +62,7 @@
       </div>
 
       <div class="hero-copy">
-        <h1>Here at Quoka Guide, we focus on small businesses and deliver top-tier websites at a great price.</h1>
+        <h1>Built for small businesses. Designed to look premium and convert visitors into customers.</h1>
         <a class="button primary" href="plans.html">See Plans</a>
       </div>
     </div>
@@ -84,7 +85,7 @@
         </div>
         <div class="feature">
           <img src="assets/mobile.svg" alt="Mobile-friendly icon" class="feature-icon" />
-          <h3>Fast & Mobile Friendly</h3>
+          <h3>Fast & Mobile-Friendly</h3>
           <p>We build modern, responsive sites that look great on phones, tablets, and desktops.</p>
         </div>
       </div>
@@ -113,7 +114,7 @@
 
           <article class="service-card">
             <h3 class="service-title">SEO Setup</h3>
-            <p class="service-desc">Get found on Google with on-page SEO and best-practice site structure.</p>
+            <p class="service-desc">Get found on Google with clean structure, on-page SEO, and fast load times.</p>
           </article>
         </div>
       </div>
@@ -132,34 +133,197 @@
   </section>
 
   <!-- Template grid / Portfolio preview -->
-  <section class="templates" id="portfolio">
-    <div class="container">
-      <div class="grid">
-        <div class="card"><img src="assets/thumb1.jpg" alt=""><div class="card-title">Restaurant</div></div>
-        <div class="card"><img src="assets/thumb2.jpg" alt=""><div class="card-title">Home Services</div></div>
-        <div class="card"><img src="assets/thumb3.jpg" alt=""><div class="card-title">Retail</div></div>
-        <div class="card"><img src="assets/thumb4.jpg" alt=""><div class="card-title">Portfolio</div></div>
-        <div class="card"><img src="assets/thumb5.jpg" alt=""><div class="card-title">Cafe</div></div>
-        <div class="card"><img src="assets/thumb6.jpg" alt=""><div class="card-title">Fitness</div></div>
-        <div class="card"><img src="assets/thumb7.jpg" alt=""><div class="card-title">Events</div></div>
-        <div class="card"><img src="assets/thumb8.jpg" alt=""><div class="card-title">Non-profit</div></div>
-      </div>
-    </div>
-  </section>
+<!-- Portfolio / Recent Work -->
+<section class="portfolio section" id="portfolio">
+  <div class="container">
+    <h2 class="section-title" style="text-align:left; margin-bottom:24px;">
+      Recent Work
+    </h2>
 
-  <!-- Footer -->
-  <footer class="site-footer" id="contact">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Quoka Guide.</small>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="mailto:hello@quokaguide.com">hello@quokaguide.com</a>
+    <div class="portfolio-grid">
+      <div class="portfolio-grid">
+
+        <!-- Card 1 -->
+        <button
+          class="portfolio-card"
+          data-title="Restaurant Website"
+          data-url="recent-work/restaurant/index.html">
+          
+          <img src="recent-work/restaurant/assets/hero.jpg" alt="Restaurant website preview">
+      
+          <div class="portfolio-info">
+            <div class="portfolio-name">Restaurant</div>
+            <div class="portfolio-tagline">Menu • Reservations • Mobile friendly</div>
+          </div>
+        </button>
+      
+      
+        <!-- Card 2 -->
+        <button
+          class="portfolio-card"
+          data-title="Transverse"
+          data-url="recent-work/transverse/index.html">
+      
+          <img src="recent-work/transverse/assets/hero.jpg" alt="Transverse website preview">
+      
+          <div class="portfolio-info">
+            <div class="portfolio-name">Transverse / Shop</div>
+            <div class="portfolio-tagline">Home • Shop</div>
+          </div>
+        </button>
+      
+      
+        <!-- Card 3 -->
+        <button
+          class="portfolio-card"
+          data-title="Professional / Agency"
+          data-url="recent-work/agency/index.html">
+      
+          <img src="recent-work/agency/assets/hero.jpg" alt="Agency website preview">
+      
+          <div class="portfolio-info">
+            <div class="portfolio-name">Professional / Agency</div>
+            <div class="portfolio-tagline">About • Team • Lead capture</div>
+          </div>
+        </button>
+      
+      </div>
+      
+  </div>
+</section>
+
+
+<footer class="site-footer premium-footer">
+  <div class="container footer-grid">
+
+    <!-- Column 1: Brand -->
+    <div class="footer-col footer-brand">
+      <div class="footer-logo">
+        <img src="assets/quoka-icon.png" alt="Quoka Guide logo" class="brand-mark">
+        <span class="brand-name">Quoka Guide</span>
+      </div>
+      <p class="footer-tagline">
+        Affordable, professional websites built for small businesses ready to grow.
+      </p>
+      <small class="copyright">
+        © <span id="year"></span> Quoka Guide. All rights reserved.
+      </small>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <nav class="footer-links">
+        <a href="index.html#top">Home</a>
         <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#portfolio">Portfolio</a>
       </nav>
     </div>
-  </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <!-- Column 3: Services -->
+    <div class="footer-col">
+      <h4>Services</h4>
+      <nav class="footer-links">
+        <a href="plans.html">Website Design</a>
+        <a href="plans.html">Maintenance Plans</a>
+        <a href="contact.html">Custom Projects</a>
+      </nav>
+    </div>
+
+    <!-- Column 4: Contact -->
+    <div class="footer-col footer-contact">
+      <h4>Contact</h4>
+      <a href="mailto:quokaguide@gmail.com">quokaguide@gmail.com</a>
+      <a href="tel:+13868376525">(386) 837-6525</a>
+      <p class="footer-location">Serving clients nationwide</p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+  <!-- Live Preview Modal -->
+<div class="lightbox-overlay" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Website preview">
+  <div class="lightbox-dialog">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
+
+    <div class="lightbox-header">
+      <h3 id="lightboxTitle">Website Preview</h3>
+      <a class="lightbox-demo-link" id="lightboxOpenNew" href="#" target="_blank" rel="noopener">Open in new tab ›</a>
+    </div>
+
+    <div class="lightbox-iframe-wrap">
+      <iframe
+        id="lightboxFrame"
+        title="Website preview"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+        sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
+        src=""
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Elements
+  const lightbox       = document.getElementById('lightbox');
+  const lbTitle        = document.getElementById('lightboxTitle');
+  const lbFrame        = document.getElementById('lightboxFrame');
+  const lbOpenNew      = document.getElementById('lightboxOpenNew');
+  const btnClose       = document.getElementById('lightboxClose');
+
+  // Open modal with a given card
+  function openLightbox(cardEl) {
+    const title = cardEl.getAttribute('data-title') || 'Website Preview';
+    const url   = cardEl.getAttribute('data-url');
+
+    lbTitle.textContent = title;
+
+    // Set the iframe + "open in new tab" link
+    lbFrame.src = url;
+    lbOpenNew.href = url;
+
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+
+    // Move focus to close button for accessibility
+    btnClose.focus();
+  }
+
+  // Close modal
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+
+    // Stop the site from continuing to run in the background
+    lbFrame.src = '';
+    lbOpenNew.href = '#';
+  }
+
+  // Click handlers for cards
+  document.querySelectorAll('.portfolio-card').forEach(card => {
+    card.addEventListener('click', () => openLightbox(card));
+  });
+
+  // Close button
+  btnClose.addEventListener('click', closeLightbox);
+
+  // Close if you click backdrop outside dialog
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Keyboard support (ESC)
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+
 </body>
 </html>

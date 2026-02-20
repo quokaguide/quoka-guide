@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Propello Reality — Beautiful Homes All Over Central Florida</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&family=Pacifico&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- =========================
+     TOP NAV
+========================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="brand">
+      <div class="brand-mark">PC</div>
+      <div class="brand-info">
+        <div class="brand-name">Propello Realty</div>
+        <div class="brand-tagline">The Heart Realy here in Central Florida</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Properties</a>
+      <a href="#services">Rentals</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn">🔍</button>
+      <button class="icon-btn">♥</button>
+      <button class="pill-btn">Orlando, FL</button>
+    </div>
+
+  </div>
+</header>
+
+<!-- =========================
+     TEAL PROMO BAR
+========================= -->
+<div class="promo-bar">
+  <div class="container promo-inner">
+    <span>Holiday Launch Special — Save up to <strong>$500 in closing costs!</strong></span>
+    <span>Homes from the <strong>$600's</strong></span>
+  </div>
+</div>
+
+<!-- =========================
+     BIG HERO IMAGE
+========================= -->
+<section class="hero">
+  <div class="hero-img"></div>
+
+  <div class="hero-content container">
+    <h1 class="hero-title">
+      Let us find you your Dream Home here in 
+      <span class="hero-location">Central Florida</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Explore All Homes with the touch of a button below!
+    </p>
+
+    <div class="hero-cta">
+      <a href="#contact" class="button primary">All Homes</a>
+      <a href="#portfolio" class="button outline">New Construction</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     TABS ROW (like AW Communities)
+========================= -->
+<section class="tabs-section container" id="portfolio">
+  <div class="tabs">
+    <button class="tab active">Featured Homes</button>
+    <button class="tab">Houses</button>
+    <button class="tab">TownHomes</button>
+    <button class="tab">Condos</button>
+  </div>
+
+  <div class="sort-box">
+    <label>Sort By:
+      <select>
+        <option>Most Recent</option>
+        <option>Price (Low → High)</option>
+        <option>Price (High → Low)</option>
+      </select>
+    </label>
+  </div>
+</section>
+
+<!-- =========================
+     CARD LIST SECTION (AW style)
+========================= -->
+<section class="cards container">
+
+  <article class="card">
+    <img src="assets/house3.jpg" alt="" class="card-img">
+    <div class="card-body">
+      <p class="card-ribbon">New LIsting</p>
+      <h3 class="card-title">The Cottage Downtown</h3>
+      <p class="card-desc">3 Bed - 2 Bath</p>
+      <p class="card-price">Listing Price $750,000</p>
+      <div class="card-actions">
+        <button class="card-btn">View Home</button>
+        <button class="card-btn">Request Info</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="assets/house4.jpg" alt="" class="card-img">
+    <div class="card-body">
+      <p class="card-ribbon">New Listing</p>
+      <h3 class="card-title">Altamonte Springs Lane</h3>
+      <p class="card-desc">4 Bed - 2 Bath - Pool</p>
+      <p class="card-price">Listing Price $550,000</p>
+      <div class="card-actions">
+        <button class="card-btn">View Home</button>
+        <button class="card-btn">Request Info</button>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <img src="assets/house1.jpg" alt="" class="card-img">
+    <div class="card-body">
+      <p class="card-ribbon">New Listing</p>
+      <h3 class="card-title">Winter Park Modern</h3>
+      <p class="card-desc">4 Bed · 3 Bath · Lake View</p>
+      <p class="card-price">Listing Price $825,000</p>
+      <div class="card-actions">
+        <button class="card-btn">View Home</button>
+        <button class="card-btn">Request Info</button>
+      </div>
+    </div>
+  </article>
+  
+  <article class="card">
+    <img src="assets/house2.jpg" alt="" class="card-img">
+    <div class="card-body">
+      <p class="card-ribbon">New Listing</p>
+      <h3 class="card-title">Lake Nona Estate</h3>
+      <p class="card-desc">5 Bed · 4 Bath · Pool</p>
+      <p class="card-price">Listing Price $1,050,000</p>
+      <div class="card-actions">
+        <button class="card-btn">View Home</button>
+        <button class="card-btn">Request Info</button>
+      </div>
+    </div>
+  </article>
+  
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <small>© <span id="year"></span> Propello Consulting</small>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

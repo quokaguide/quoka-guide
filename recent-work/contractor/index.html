@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rapid Home Remodels | Reliable Service</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Rapid Home Repair Logo" class="logo" />
+        <span>Rapid Home Remodel</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#work">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Fast, affordable home remodels — done right the first time.</h1>
+      <p>
+        Licensed • Insured <br />
+        Central Florida & surrounding areas
+      </p>
+      <a href="#contact" class="hero-button">GET AN ESTIMATE</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">What We Do</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Full Kitchen Remodel</h3>
+        </div>
+        <div class="service-card">
+          <h3>Full Bathroom Remodel</h3>
+        </div>
+        <div class="service-card">
+          <h3>Full Demo</h3>
+        </div>
+        <div class="service-card">
+          <h3>Repairs</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="beforeafter" id="work">
+    <div class="container">
+      <h2 class="section-title light">Before & After</h2>
+
+      <div class="ba-grid">
+        <div class="ba-card">
+          <span class="ba-label before">Before</span>
+          <img src="assets/before1.png" alt="">
+        </div>
+        <div class="ba-card">
+          <span class="ba-label after">After</span>
+          <img src="assets/after1.png" alt="">
+        </div>
+        <div class="ba-card">
+          <span class="ba-label before">Before</span>
+          <img src="assets/before2.png" alt="">
+        </div>
+        <div class="ba-card">
+          <span class="ba-label after">After</span>
+          <img src="assets/after2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Get a Free Estimate</h2>
+        <p>Tell us about your project.</p>
+
+        <form class="form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <textarea placeholder="Describe the issue"></textarea>
+          <button type="submit">Send Request</button>
+        </form>
+      </div>
+
+      <div class="contact-card">
+        <h3>Call or Text</h3>
+        <p>(555) 888-1234</p>
+
+        <h3>Service Area</h3>
+        <p>Central Florida & Nearby Cities</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Rapid Home Remodel</span>
+      <span>Licensed & Insured</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
