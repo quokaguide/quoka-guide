@@ -612,3 +612,26 @@ a { text-decoration:none; color:inherit; }
   .site-header{ position:sticky; }
   .header-inner{ position:relative; }
 }
+
+/* ===== Mobile: force space between stacked cards ===== */
+@media (max-width: 640px){
+  /* If these are the “feature” cards */
+  .feature + .feature{
+    margin-top: 24px;
+  }
+
+  /* If these are the “service” cards */
+  .service-card + .service-card{
+    margin-top: 24px;
+  }
+
+  /* Generic fallback: any .card stacked vertically */
+  .card + .card{
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 640px){
+  .section{ padding: 64px 0; }        /* slightly tighter than 80 but still roomy */
+  .section + .section{ margin-top: 16px; }
+}
