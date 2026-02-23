@@ -350,13 +350,14 @@ a { text-decoration:none; color:inherit; }
   padding: 8px 10px;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  z-index: 2;
 }
 
 .lightbox-header {
-  padding: 16px 20px;
+  padding: 16px 56px 16px 20px; /* extra room for X */
   border-bottom: 1px solid var(--border);
   display: flex;
-  align-items: baseline;
+  align-items: center; /* was baseline */
   justify-content: space-between;
   gap: 12px;
 }
@@ -372,6 +373,9 @@ a { text-decoration:none; color:inherit; }
   font-size: 14px;
   color: var(--brand);
   font-weight: 500;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: 12px;
 }
 
 .lightbox-iframe-wrap{ flex:1; background:#0f172a; }
